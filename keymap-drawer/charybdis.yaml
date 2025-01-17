@@ -216,8 +216,8 @@ layers:
   - MOVE UP
   - WHEEL U
   - WHEEL R
-  - ''
-  - ''
+  - Gui+ Y
+  - Sft+Gui+ Y
   - ''
   - ''
   - ''
@@ -235,10 +235,10 @@ layers:
   - LCMD
   - ''
   - ''
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
+  - ''
+  - Gui+ X
+  - Gui+ C
+  - Gui+ V
   - M CLK
   - ''
   - ''
