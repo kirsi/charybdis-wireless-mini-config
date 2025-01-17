@@ -24,7 +24,7 @@ layers:
   - {t: L, h: RIGHT ALT}
   - '&hm LCMD ((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_MINUS_AND_UNDERSCORE)))'
   - DEL
-  - SCRL SLOW
+  - '&td_clk_scrl'
   - Z
   - {t: X, h: MEH}
   - {t: C, h: HYPER}
