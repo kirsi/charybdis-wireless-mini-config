@@ -1,6 +1,6 @@
 layers:
   BASE:
-  - {t: BASE, h: toggle}
+  - ESCAPE
   - Q
   - W
   - E
@@ -11,9 +11,9 @@ layers:
   - I
   - O
   - P
-  - L_BASE L_PHOTO L_GAME
+  - EXTRAS
   - {t: TAB, h: LCMD}
-  - {t: A, h: NAV}
+  - {t: A, h: LEFT GUI}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LCTRL}
   - {t: F, h: LEFT SHIFT}
@@ -22,9 +22,9 @@ layers:
   - {t: J, h: LEFT SHIFT}
   - {t: K, h: RCTRL}
   - {t: L, h: RIGHT ALT}
-  - {t: ;, h: LCMD}
+  - '&hm LCMD ((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_MINUS_AND_UNDERSCORE)))'
   - DEL
-  - SEARCH
+  - SCRL SLOW
   - Z
   - {t: X, h: MEH}
   - {t: C, h: HYPER}
@@ -35,12 +35,12 @@ layers:
   - {t: ',', h: HYPER}
   - {t: ., h: MEH}
   - /
-  - DEV TOOLS
   - SCRL SLOW
+  - MOUSE
   - L CLK
-  - {t: BACK SPACE, h: NUM}
-  - {t: RETURN, h: MOUSE}
   - {t: SPACE, h: SYM}
+  - {t: RETURN, h: NUM}
+  - {t: BACK SPACE, h: NAV_SYSTEM}
   NUM:
   - {t: ▽, type: trans}
   - ''
@@ -72,7 +72,7 @@ layers:
   - ''
   - ''
   - ''
-  - .
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 0 AND RIGHT PARENTHESIS))
   - {t: '1', h: F1}
   - {t: '2', h: F2}
   - {t: '3', h: F3}
@@ -80,142 +80,98 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
-  - '0'
-  - {t: ▽, type: trans}
-  NAV:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - PANE ◀
-  - PANE ▲
-  - PANE ▼
-  - PANE ▶
-  - ''
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  NAV_SYSTEM:
   - ''
-  - VSPLIT
+  - ''
+  - PAGE DOWN
+  - UP
+  - PAGE UP
+  - HOME
+  - ''
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD LEFT BRACKET AND LEFT BRACE))
+  - ''
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SEMICOLON AND COLON))
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD APOSTROPHE AND QUOTE))
   - LEFT
   - DOWN
-  - UP
   - RIGHT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - HSPLIT
-  - HOME
-  - PG DN
-  - PG UP
   - END
   - ''
+  - {t: ▽, type: trans}
+  - MUTE
+  - VOLUME DOWN
+  - VOLUME UP
   - ''
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PLAY PAUSE
+  - PREVIOUS
+  - NEXT
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   SYM:
   - ''
-  - +
-  - '{'
-  - '}'
-  - '-'
-  - ':'
-  - \
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD BACKSLASH AND PIPE)))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE))
+  - Sft+ (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 2 AND AT)))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 6 AND CARET)))
   - '`'
-  - $
-  - ^
-  - ''''
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 8 AND ASTERISK)))
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS)))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 5 AND PERCENT)))
   - ''
   - ''
-  - {t: '!', h: LCMD}
+  - '&hm LCMD ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_1_AND_EXCLAMATION))))'
   - {t: (, h: LEFT ALT}
   - {t: ), h: LCTRL}
   - {t: SPACE, h: LEFT SHIFT}
-  - '~'
-  - /
-  - {t: SPACE, h: LEFT SHIFT}
-  - {t: <, h: LCTRL}
-  - {t: '>', h: LEFT ALT}
-  - '#'
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD BACKSLASH AND PIPE))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN)))
+  - '&hm LEFT_SHIFT (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_PERIOD_AND_GREATER_THAN)))'
+  - '&hm LCTRL (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_8_AND_ASTERISK)))'
+  - '&hm LEFT_ALT (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_9_AND_LEFT_PARENTHESIS)))'
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
   - ''
   - ''
-  - '='
-  - '['
-  - ']'
-  - _
-  - ;
-  - '|'
-  - '*'
-  - '&'
-  - '%'
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD GRAVE ACCENT AND TILDE))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE)))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND)))
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE)))
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE)))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 4 AND DOLLAR)))
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND)))
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 0 AND RIGHT PARENTHESIS)))
   - '@'
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
   - {type: held}
-  GAME: ['1', TAB, Q, W, E, R, '', '', '', '', '', '', '2', LCTRL, A, S, D, F, '', '', '', '', '', '', '3', LSHFT, Z, X, C, V, '', '', '', '', '', '', '', SPACE,
-    LEFT ALT, '', '']
-  PHOTOS:
-  - {t: ▽, type: trans}
-  - TAG Z
-  - TAG E
-  - TAG A
-  - TAG S
-  - TAG B
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - FIT
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - LCTRL
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - SHRED
-  - SHOW TAGS
-  - REJECT
-  - PENDING
-  - ACCEPT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   EXTRAS:
   - POWER
-  - SHRUG
-  - LGTM
-  - GIT COMMIT
+  - ''
+  - ''
+  - ''
   - ''
   - BRIGHTNESS INC
   - {t: BT, h: '0'}
@@ -223,14 +179,14 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - OUT TOG
-  - BT CLR
+  - {type: held}
   - SLEEP
-  - SHIT SUDO
-  - PYTHON LOOP
-  - JS LOOP
+  - ''
+  - ''
+  - ''
   - ''
   - BRIGHTNESS DEC
-  - ''
+  - BT CLR
   - PREVIOUS
   - PLAY PAUSE
   - STOP
@@ -241,8 +197,8 @@ layers:
   - ''
   - ''
   - ''
-  - CLIP HIST
-  - NEW DIR
+  - ''
+  - ''
   - MUTE
   - VOLUME DOWN
   - VOLUME UP
@@ -290,10 +246,10 @@ layers:
   - ''
   - ''
   - ''
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: RETURN, type: held}
+  - RETURN
   - {t: ▽, type: trans}
   SLOW:
   - {t: ▽, type: trans}
