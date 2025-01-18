@@ -48,11 +48,11 @@ layers:
   - ''
   - ''
   - ''
-  - /
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND)))
   - {t: '7', h: F7}
   - {t: '8', h: F8}
   - {t: '9', h: F9}
-  - {t: '-', h: F10}
+  - '&hm F10 (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SLASH_AND_QUESTION_MARK))'
   - ''
   - {t: ▽, type: trans}
   - ''
@@ -64,7 +64,7 @@ layers:
   - {t: '4', h: F4}
   - {t: '5', h: F5}
   - {t: '6', h: F6}
-  - {t: +, h: F11}
+  - '&hm F11 (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_RIGHT_BRACKET_AND_RIGHT_BRACE))'
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -76,7 +76,7 @@ layers:
   - {t: '1', h: F1}
   - {t: '2', h: F2}
   - {t: '3', h: F3}
-  - {t: '=', h: DEV TOOLS}
+  - '&hm F12 (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_0_AND_RIGHT_PARENTHESIS)))'
   - ''
   - ''
   - ''
@@ -86,9 +86,9 @@ layers:
   NAV_SYSTEM:
   - ''
   - ''
-  - PAGE DOWN
-  - UP
   - PAGE UP
+  - UP
+  - PAGE DOWN
   - HOME
   - ''
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD LEFT BRACKET AND LEFT BRACE))
@@ -103,7 +103,6 @@ layers:
   - RIGHT
   - END
   - ''
-  - {t: ▽, type: trans}
   - MUTE
   - VOLUME DOWN
   - VOLUME UP
@@ -119,6 +118,7 @@ layers:
   - PLAY PAUSE
   - PREVIOUS
   - NEXT
+  - ''
   - ''
   - ''
   - ''
@@ -140,9 +140,9 @@ layers:
   - ''
   - ''
   - '&hm LCMD ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_1_AND_EXCLAMATION))))'
-  - {t: (, h: LEFT ALT}
-  - {t: ), h: LCTRL}
-  - {t: SPACE, h: LEFT SHIFT}
+  - '&hm LEFT_ALT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SLASH_AND_QUESTION_MARK))'
+  - '&hm LCTRL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_RIGHT_BRACKET_AND_RIGHT_BRACE))'
+  - '&hm LEFT_SHIFT (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_0_AND_RIGHT_PARENTHESIS)))'
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD BACKSLASH AND PIPE))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN)))
   - '&hm LEFT_SHIFT (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_PERIOD_AND_GREATER_THAN)))'
