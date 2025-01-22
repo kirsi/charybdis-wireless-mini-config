@@ -24,7 +24,7 @@ layers:
   - {t: L, h: RIGHT ALT}
   - '&hm LCMD ((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_MINUS_AND_UNDERSCORE)))'
   - DEL
-  - SCRL SLOW
+  - MOUSE
   - Z
   - {t: X, h: MEH}
   - {t: C, h: HYPER}
@@ -36,7 +36,7 @@ layers:
   - {t: ., h: MEH}
   - /
   - '&td_clk_scrl'
-  - MOUSE
+  - SCRL SLOW
   - L CLK
   - {t: SPACE, h: SYM}
   - {t: RETURN, h: NUM}
@@ -234,7 +234,7 @@ layers:
   - LEFT ALT
   - LCMD
   - ''
-  - ''
+  - {type: held}
   - ''
   - Gui+ X
   - Gui+ C
@@ -246,7 +246,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - RETURN
