@@ -1,6 +1,6 @@
 layers:
   BASE:
-  - ESCAPE
+  - {t: BASE, h: toggle}
   - Q
   - W
   - E
@@ -218,8 +218,8 @@ layers:
   - WHEEL R
   - Gui+ Y
   - Sft+Gui+ Y
-  - ''
-  - ''
+  - Sft+Gui+ (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND))
+  - Sft+Gui+ (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD F))
   - ''
   - ''
   - TAB
