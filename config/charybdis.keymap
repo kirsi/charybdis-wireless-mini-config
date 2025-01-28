@@ -202,7 +202,7 @@
 
         SYM {
             bindings = <
-&none  &kp DE_SINGLE_QUOTE  &kp DE_LESS_THAN       &kp LS(DE_LESS_THAN)  &kp DE_DOUBLE_QUOTES     &kp DE_PERIOD    &kp DE_AMPERSAND  &kp GRAVE                &kp DE_LEFT_BRACKET            &kp DE_RIGHT_BRACKET               &kp DE_PERCENT   &none
+&none  &kp DE_SINGLE_QUOTE  &kp DE_LESS_THAN       &kp LS(DE_LESS_THAN)  &kp DE_DOUBLE_QUOTES     &kp DE_PERIOD    &kp DE_AMPERSAND  &kp DE_GRAVE             &kp DE_LEFT_BRACKET            &kp DE_RIGHT_BRACKET               &kp DE_PERCENT   &none
 &none  &hm LCMD DE_EXCL     &hm LEFT_ALT DE_MINUS  &hm LCTRL DE_PLUS     &hm LEFT_SHIFT DE_EQUAL  &kp DE_HASH      &kp DE_SEMICOLON  &hm LEFT_SHIFT DE_COLON  &hm LCTRL DE_LEFT_PARENTHESIS  &hm LEFT_ALT DE_RIGHT_PARENTHESIS  &kp DE_QUESTION  &none
 &none  &kp DE_CARET         &kp DE_ASTERISK        &kp DE_SLASH          &kp DE_BACKSLASH         &kp DE_PIPE      &kp DE_TILDE      &kp DE_DOLLAR            &kp DE_LEFT_BRACE              &kp DE_RIGHT_BRACE                 &kp DE_AT        &none
                                                    &trans                &trans                   &trans           &none             &trans
