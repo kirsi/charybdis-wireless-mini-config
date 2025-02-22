@@ -38,7 +38,7 @@ layers:
   - '&td_clk_scrl'
   - SCRL SLOW
   - L CLK
-  - {t: SPACE, h: SYM}
+  - {t: SPACE, h: SYMBOL}
   - {t: RETURN, h: NUM}
   - {t: BACK SPACE, h: NAV_SYSTEM}
   NUM:
@@ -125,7 +125,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  SYM:
+  SYMBOL:
   - ''
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD BACKSLASH AND PIPE)))
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE))
